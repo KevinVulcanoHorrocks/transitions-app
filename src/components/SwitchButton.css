@@ -1,0 +1,63 @@
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.modes {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.modes label {
+  margin-right: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align items horizontally */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for better visibility */
+  }
+
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.fade-exit-done {
+  opacity: 0;
+  transform: translateX(100%);
+}

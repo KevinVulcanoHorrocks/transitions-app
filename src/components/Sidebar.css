@@ -1,0 +1,26 @@
+
+.sidebar-enter {
+  width: 64px;
+}
+
+.sidebar-enter-active {
+  width: 250px; /* Adjust width as needed */
+  transition: width 300ms ease-in-out;
+}
+
+.sidebar-enter-done {
+  width: 250px; /* Ensure sidebar has full width after entering */
+}
+
+.sidebar-exit {
+  width: 250px; /* Ensure sidebar maintains width when exiting */
+}
+
+.sidebar-exit-active {
+  width: 64px;
+  transition: width 300ms ease-in-out;
+}
+
+.sidebar-exit-done {
+  width: 64px; /* Ensure sidebar has zero width after exiting */
+}

@@ -1,0 +1,41 @@
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}

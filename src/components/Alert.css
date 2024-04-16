@@ -1,0 +1,39 @@
+
+.alert-appear {
+  opacity: 0;
+}
+
+.alert-appear-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.alert-appear-done {
+  opacity: 1; /* Ensure opacity is fully applied after appearing */
+}
+
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.alert-enter-done {
+  opacity: 1; /* Ensure opacity is fully applied after entering */
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.alert-exit-done {
+  opacity: 0; /* Ensure opacity is fully applied after exiting */
+}
